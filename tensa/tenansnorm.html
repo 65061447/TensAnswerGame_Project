@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html style="text-align: center; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+<head>
+    <meta charset="utf-8">
+    <title>Number Guessing Game</title>
+ 
+    <style>
+        body {
+            font-family: sans-serif;
+            width: 50%;
+            max-width: 800px;
+            min-width: 480px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+ 
+<body style="background-color: #dfd1542c;">
+    <h1>TensAnswerGame</h1>
+    <p style="font-size: large;">
+        <b> GUESS NUMBER 1-100 Let's GO!! <b>
+    </p>
+ 
+    <div class="form">
+        <label for="guessField" style="font-size: large;">
+            Enter a guess: 
+        </label>
+         
+        <input type="text" id="guessField"
+            class="guessField">
+         
+        <input type="submit" value="Submit guess"
+            class="guessSubmit" id="submitguess">
+    </div>
+ 
+    <script type="text/javascript" src="tennorm.js">
+ 
+       
+    </script>
+</body>
+</html>
+
+<footer>
+    <div>
+        <img src="./normal.png">
+    </div>
+</footer>
+
+<button style="margin: top 100px; height: 50px; width: 100px;" onclick="goBack()">BACK</a></button>
+<button style="margin: top 100px; height: 50px; width: 100px;" onclick="goHome()">HOME</a></button>
+
+<script>
+
+    const goBack = () => {
+        window.location.href = './ChooseDifficulty.html'
+    }
+    
+    const goHome = () => {
+        window.location.href = './index.html'
+    }
+</script>
